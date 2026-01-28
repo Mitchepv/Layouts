@@ -16,15 +16,27 @@ struct ContentView: View {
 //                .ignoresSafeArea()
 //        } embedd in vstack
             
+//        GeometryReader { geometry in }
+            
             VStack {
                 
-//                Text("You have skills")
-//                    .font(.largeTitle)
-//                    .fontWeight(.black)
-//                    .foregroundStyle(.goldBC)
-//                    .padding()
-//                    .background(Color("maroon-BC"))
-//                    .clipShape(RoundedRectangle(cornerRadius: 15 ))
+                //                Text("You have skills")
+                //                    .font(.largeTitle)
+                //                    .fontWeight(.black)
+                //                    .foregroundStyle(.goldBC)
+                //                    .padding()
+                //                    .background(Color("maroon-BC"))
+                //                    .clipShape(RoundedRectangle(cornerRadius: 15 ))
+                
+                Text ("you are Awesome")
+                    .font(.largeTitle)
+                    .fontWeight(.black)
+                    .foregroundStyle(.white)
+                    .padding()
+                    .frame(maxWidth: .infinity)
+                    .background(.indigo)
+                
+                
                 
                 Spacer()
                 
@@ -36,11 +48,20 @@ struct ContentView: View {
                     .foregroundStyle(.red)
                     .frame(height: 150)
                     .frame(maxWidth: .infinity)
-                    .border(.orange,width: 2)
+                //                    .border(.orange,width: 2)
                     .padding()
                 
                 Spacer()
                 
+//                Divider()
+//                    .background(.black)
+//                    .padding()
+//                    .frame(width: 150)
+//                
+//                
+//                Rectangle()
+//                    .fill(.indigo)
+//                    .frame(width: geometry.size.width * 2/3 , height: 1)
                 
                 HStack{
                     
@@ -55,16 +76,20 @@ struct ContentView: View {
                     }
                 }
                 .buttonStyle(.borderedProminent)
-                //            m
                 .padding()
-                .tint(.vermillion)
+                
+                Rectangle ()
+                    .frame(height:0)
+                    .background(.indigo)
+        
+                
+//                .tint(.vermillion)
                 
             }
-//            .background(
-//                Gradient(colors: [.darkIce, .orange ])
-//            )
-         
-       
+            //            .background(
+            //                Gradient(colors: [.darkIce, .orange ])
+            //            )
+ 
     }
 }
 
